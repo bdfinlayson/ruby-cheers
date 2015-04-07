@@ -5,13 +5,14 @@ puts "Hello, #{name}!!!"
 vowels = ['A','E','I','O','U']
 puts "What did you say your name was?"
 name = gets.upcase.strip
-  if name == ""
-    puts "You failed to give a name!"
-  elsif name[/A|E|I|O|U/].nil?
-    puts "Your name has no vowels!"
-  end
-  name.each_char { |x|
-    if vowels.include?(x)
+if name == ""
+  puts "You failed to give a name!"
+end
+name.each_char { |x|
+  if vowels.include?(x)
     puts "Give me an #{x}!"
-    end
-  }
+  elsif !vowels.include?(x)
+    puts "Give me a #{x}!"
+  end
+}
+puts "#{name} is GRAND!"
