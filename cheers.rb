@@ -2,7 +2,7 @@ puts "Hello, what's your name?"
 name = gets.upcase.strip
 puts "Hello, #{name}!!!"
 # what I want is "Hello #{name}" with emphasis
-vowels = ['A','E','I','O','U']
+vowels = ['A','E','I','O']
 puts "What did you say your name was?"
 name = gets.upcase.strip
 if name == ""
